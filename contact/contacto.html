@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Contacto</h1>
+
+        <h3>Para más información acerca de nuestros servicios o cualquier consulta que tengas, no dudes en contactarnos.
+            <br>Estamos aquí para ayudarte y responder a todas tus preguntas.
+        </h3>
+
+
+        <h3>Información de contacto </h3>
+        <p>+34 610 631 924
+            <br>informacion@goodrive.es
+        </p>
+        <br>
+        <h3>Dirección</h3>
+        <p>C/ Viera y Clavijo, 15, 38003
+            <br>Santa Cruz de Tenerife
+        </p>
+        <br>
+    </div>
+
+    <div>
+
+    </div>
+
+    <form id="formularioContacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="button" onclick="enviarFormulario()">Enviar Mensaje</button>
+    </form>
+    <a href="contacto2.html">
+        <button>vamos a contacto2</button>
+    </a>
+
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
