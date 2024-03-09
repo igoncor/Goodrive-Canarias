@@ -1,112 +1,111 @@
-.body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+h3 {
+    margin-left: 5px;
 
+}
 
 form {
     max-width: 600px;
     width: 150vw;
     height: 800;
-    margin: 0 auto;   
+    margin: 0 auto;
     padding: 20px;
-    /* Añade espacio interno para mayor claridad */
     border: 1px solid #ccc;
-    /* Un borde para visualizar mejor el formulario */
     border-radius: 8px;
     display: grid;
-    /* align-content: center; */
 
 
-}
-
-
-.textito{
-font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #333;
-    /* Color del texto */
-    line-height: 1.5;
-    /* Altura de línea */
-    margin-bottom: 20px;
-    /* Margen inferior para separar de otros elementos */
 
 }
 
-.contact-info h3 {
-    font-size: 24px;
-    /* Tamaño de fuente para títulos */
-    color: #007BFF;
-    /* Color del título */
-}
-
-.address {
-    font-style: italic;
-    /* Estilo de fuente en cursiva para la dirección */
-}
-
-.contactito{
-display:flex;
-align-items: center;
-background-color: #909090;
-/* margin: 0 auto; */
-
-}
-/* label {
+label {
     display: block;
     margin-bottom: 8px;
     color: grey;
-} */
-
-
-/* img {
-    width: 100vw;
-    height: auto;
 }
 
-@media only screen and (max-width: 600px) {
-    img {
-        width: 40px;
-        height: auto
-    }
-} */
 
 
+
+
+
+
+/* grey scale 128, 128, 128  - 190, 190, 190 */
+button {
+    width: 100px;
+    height: 50px;
+    background-color: #909090;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #787878;
+}
 
 input {
     width: 500px;
     height: 70;
     padding: 8px;
     margin-bottom: 16px;
-    padding: 20px;   
-    border: 1px solid #ccc;    
-    border-radius: 8px;  
-}
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 
+}
 
 textarea {
     width: 300;
-    height: 100;
+    height: 150;
     padding: 8px;
     margin-bottom: 16px;
+
 }
 
-button {
-    width: 100px;
-    height: 50px;
-    background-color: #909090;
-    
-    /* grey scale 128, 128, 128  - 190, 190, 190 */
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    margin: 0 auto;
+
+
+.textito {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 5px;      
+    /* justify-content: start; */
+    display: flex;
+
 }
 
-button:hover {
-    background-color: #787878;
+.textito2 {
+    /* justify-content: start; */
+    display: flex;
+
+}
+
+
+
+.address {
+    font-style: italic;
+
+}
+
+.contactito {
+    display: grid;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.icon1 {
+    display: flex;
+    align-items: center;
+
+}
+
+.icon2 {
+    display: flex;
+    align-items: center;
+
 }
