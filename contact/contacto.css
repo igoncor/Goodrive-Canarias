@@ -11,14 +11,12 @@ form {
     max-width: 600px;
     width: 150vw;
     height: 800;
-    margin: 0 auto;
-    /* Esto centrará el formulario en la pantalla */
+    margin: 0 auto;   
     padding: 20px;
     /* Añade espacio interno para mayor claridad */
     border: 1px solid #ccc;
     /* Un borde para visualizar mejor el formulario */
     border-radius: 8px;
-    /* Esquinas redondeadas */
     display: grid;
     /* align-content: center; */
 
@@ -36,12 +34,9 @@ input {
     height: 70;
     padding: 8px;
     margin-bottom: 16px;
-    padding: 20px;
-    /* Añade espacio interno para mayor claridad */
-    border: 1px solid #ccc;
-    /* Un borde para visualizar mejor el formulario */
-    border-radius: 8px;
-    /* Esquinas redondeadas */
+    padding: 20px;   
+    border: 1px solid #ccc;    
+    border-radius: 8px;  
 
 }
 
