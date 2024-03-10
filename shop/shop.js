@@ -28,9 +28,7 @@ function getPriceByProduct(itemNode) {
 
 function updatePriceByProduct(productPrice, index) {
     var products = document.getElementsByClassName("producto");
-    products[index].getElementsByClassName(
-        "product-total"
-    )[0].innerText = `${productPrice}€`;
+    products[index].getElementsByClassName("product-total") [0].innerText = `${productPrice}€`;
 
 
 }
@@ -40,7 +38,6 @@ function getTotalPrice() {
     var products = document.getElementsByClassName("producto");
     var total = 0;
     for (let i = 0; i < products.length; i++) {
-        debugger
         let price = getPriceByProduct(products[i]);
         updatePriceByProduct(price, i);
         total += price;
