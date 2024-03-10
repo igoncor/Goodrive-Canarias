@@ -1,0 +1,27 @@
+
+<<<<label for="Unidades">UDs</label>
+<input id="Unidades" name="Cantidad" class="Unidad" type="number" value="0" />>>>
+
+En este ejemplo, el <label> está correctamente asociado con el <input> mediante el uso del atributo for en el <label> 
+que coincide con el id del <input>. Esto mejora la accesibilidad y la usabilidad permitiendo que los usuarios activen 
+el campo de entrada haciendo clic en la etiqueta "UDs".
+
+for="Unidades" en <label> se asocia con id="Unidades" en <input>.
+name="Cantidad" en <input> se utiliza para identificar los datos del formulario cuando se envía.
+
+Identificador Único (id):
+
+El atributo id="Unidades" en el <input> proporciona un identificador único para el elemento dentro de la página HTML. 
+Este id es lo que utiliza el for en el <label> para referenciar y asociar con el campo de entrada.
+Nombre del Campo (name):
+
+El atributo name="Cantidad" en el <input> define el nombre de la variable que será enviada con el valor del campo al procesar 
+el formulario. 
+Este nombre es clave para acceder a los datos del campo en el lado del servidor o en scripts de cliente.
+Clase para Estilos o Scripts (class):
+
+El class="Unidad" asigna una clase al campo de entrada, lo cual puede ser utilizado para aplicar estilos CSS específicos o para 
+seleccionar el elemento mediante JavaScript. Tipo y Valor Inicial del Campo (type, value):
+
+type="number" indica que el campo de entrada acepta números, lo cual permite que los navegadores modernos proporcionen controles 
+para incrementar o disminuir el valor. value="0" establece el valor inicial del campo a 0.
