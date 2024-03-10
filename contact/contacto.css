@@ -1,7 +1,10 @@
 h3 {
     margin-left: 5px;
+    font-size: 20px;
 
 }
+
+
 
 form {
     max-width: 600px;
@@ -65,6 +68,11 @@ textarea {
 
 }
 
+head{
+
+
+}
+
 
 
 .textito {
@@ -72,22 +80,27 @@ textarea {
     font-size: 16px;
     color: #333;
     line-height: 1.5;
-    margin-bottom: 5px;      
-    /* justify-content: start; */
+    margin-bottom: 5px;
+    justify-content: start;   
+    width: 100vw;
+    height: 300px;
     display: flex;
+    background-color: aquamarine;
 
 }
 
 .textito2 {
-    /* justify-content: start; */
+    justify-content: start;
     display: flex;
-
+    background-color: aqua;
 }
 
-
-
+.infocontact{
+background-color: yellowgreen;
+}
 .address {
     font-style: italic;
+
 
 }
 
@@ -101,11 +114,38 @@ textarea {
 .icon1 {
     display: flex;
     align-items: center;
+    line-height: 1.5;
+    margin-top: 250px;
+    justify-content: start;
+/* background-color: orange; */
 
 }
 
 .icon2 {
     display: flex;
     align-items: center;
+
+}
+
+
+.image {
+    /* display: inline-block; */
+    display: flex;
+    align-items: end;
+    align-content: end;
+    margin-left: 350px;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: black;
+
+}
+
+.elementor{   
+/* position: relative; */
+background-color: red;
+
+align-items: center;
+
 
 }

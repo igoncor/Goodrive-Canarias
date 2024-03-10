@@ -1,0 +1,110 @@
+h3 {
+    margin-left: 5px;
+    font-size: 20px;
+
+}
+
+
+
+form {
+    max-width: 600px;
+    width: 150vw;
+    height: 800;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: grid;
+
+
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: grey;
+}
+
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: #909090;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #787878;
+}
+
+input {
+    width: 500px;
+    height: 70;
+    padding: 8px;
+    margin-bottom: 16px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+
+textarea {
+    width: 300;
+    height: 150;
+    padding: 8px;
+    margin-bottom: 16px;
+
+}
+
+head {}
+
+
+/* SEGUIMOS PRACTICANDO CSS */
+
+.container {
+    /* position: relative; */
+    background-color: red;
+    display: grid;
+    align-items: center;
+    width: auto;
+    height: 400px;
+
+
+}
+
+.infocontact {
+    display: grid;
+    align-items: center;
+    text-align: start;
+    background-color: aqua;
+
+}
+
+.adress {
+    display: flex;
+    align-items: start;
+    background-color: aquamarine;
+
+
+}
+
+.image {
+    display: flex;
+    margin-left: 500px;
+    /* margin-top: 5px; */
+    background-color: palevioletred;
+
+}
+
+.contactito {
+    display: grid;
+    text-align: center;
+    margin-top: 100px;
+
+}
