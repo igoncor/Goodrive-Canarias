@@ -1,0 +1,111 @@
+h3 {
+    margin-left: 5px;
+
+}
+
+form {
+    max-width: 600px;
+    width: 150vw;
+    height: 800;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: grid;
+
+
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: grey;
+}
+
+
+
+
+
+
+
+/* grey scale 128, 128, 128  - 190, 190, 190 */
+button {
+    width: 100px;
+    height: 50px;
+    background-color: #909090;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #787878;
+}
+
+input {
+    width: 500px;
+    height: 70;
+    padding: 8px;
+    margin-bottom: 16px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+
+textarea {
+    width: 300;
+    height: 150;
+    padding: 8px;
+    margin-bottom: 16px;
+
+}
+
+
+
+.textito {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 5px;      
+    /* justify-content: start; */
+    display: flex;
+
+}
+
+.textito2 {
+    /* justify-content: start; */
+    display: flex;
+
+}
+
+
+
+.address {
+    font-style: italic;
+
+}
+
+.contactito {
+    display: grid;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.icon1 {
+    display: flex;
+    align-items: center;
+
+}
+
+.icon2 {
+    display: flex;
+    align-items: center;
+
+}
