@@ -1,0 +1,108 @@
+.btn {
+    display: flex;  /*El boton se comporta como un bloque permite que el botón se sitúe al lado de otros elementos sin forzar un salto de línea */
+    padding: 5px 20px;      /* Ajustado para un mejor espaciado (en este caso modificamos el color del background*/
+    margin-bottom: 0;       /*Elimina el margen inferior del botón. Esto puede ser útil para controlar con precisión la separación entre botones o entre un botón y otros elementos adyacentes*/
+    font-size: 20px;        /* Establece el tamaño de la fuente del texto dentro del botón para mejor legibilidad */
+    font-weight: 500;       /* Aumentado para darle más presencia */
+    line-height: 1.5;       /* Ajustado para una mejor proporción */
+    text-align: center;
+    white-space: nowrap;    /*Evita que el texto dentro del botón se divida en varias líneas*/
+    vertical-align: middle; /*Alinea el botón verticalmente en el medio en relación con los elementos adyacentes*/
+    cursor: pointer;        /*ambia el cursor a una mano o puntero cuando se pasa el mouse sobre el botón, indicando que el elemento es clickeable.*/
+    user-select: none;      /* Impide que el usuario seleccione el texto dentro del botón. Esto mejora la usabilidad, evitando la selección accidental del texto al hacer clic en el botón repetidamente */
+    background-color: #00BCD4;  /* Un azul por defecto, siente libre de cambiarlo */
+    color: #212121;             /* Texto neutro para contraste */
+    border: 2px solid #212121;    /* Borde que coincide con el fondo para un look limpio */
+    border-radius: 10px;          /* Radio de borde para bordes suavizados */
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;    /* Transición suave para interacciones */
+    margin: auto auto;
+}
+
+.btn:hover {                       /* actuacion del boton cuando pasa el mouse*/
+    background-color: #00BCD4;  /* Oscurecer el botón ligeramente al pasar el mouse o enfocar */
+    border-color: #212121;
+    color: #f2f2f2;             /* Mantener el texto blanco para contraste */
+    outline: 0;                   /* Eliminar el contorno predeterminado en foco */
+}
+
+/*.btn:active {                      /* actuacion del boton cuando clikeas*/
+/*    background-color: #FFEB3B;  /* Más oscuro aún cuando se hace clic */
+/*    border-color: #FFEB3B;
+}*/
+
+.btn-delete{
+    background-color: #FBC02D;
+    color: #212121;
+    border-radius: 5px;
+}
+.producto {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: small;
+
+    .nombre-artículo{
+        width: 25%;
+        max-width: 150px;
+        background-color: #FFF9C4;
+        padding: 0.2rem;
+        border: 2px solid #212121;
+        text-align: center;
+        border-radius: 5px;
+        
+    }
+    .precio-artículo{
+        width: 10%;
+        max-width: 100px;
+        text-align: justify;
+        vertical-align: middle;
+    }
+    .unidades-artículo{
+        width: 15%;
+        max-width: 150px;
+        text-align: justify;
+        vertical-align: middle;
+    }
+    .Art-5{
+        width: 5%;
+        max-width: 30px;
+    }
+    
+
+
+} 
+
+#calc-precio{
+    width: 250px;
+}
+
+.background-container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;  
+    background-color: #BDBDBD; 
+}
+.div-container{
+    background-color: rgb(178, 237, 178);
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 1rem;
+    width: 60%;
+}
+
+.div-cart{
+    background-color: #FBC02D;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 1rem;
+    width: 40%;
+}
+
+
+
+
