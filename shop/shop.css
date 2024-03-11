@@ -77,10 +77,6 @@
     width: 250px;
 }
 
-#Unidades{
-    width: 100px;
-    text-align:center;
-}
 .background-container{
     display: flex;
     flex-direction: row;
@@ -90,7 +86,7 @@
     background-color: #BDBDBD; 
 }
 .div-container{
-    background-color: rosybrown;
+    background-color: rgb(178, 237, 178);
     display: flex;
     flex-direction: row;
     height: auto;

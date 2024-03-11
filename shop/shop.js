@@ -16,30 +16,30 @@ function deleteItem(e) {
 
 }
 
-function getPriceByProduct(itemNode) {
-    var price = itemNode.getElementsByClassName("product-price")[0];
 
+function getPriceByArticle(article) {
+    var price = article.getElementsByClassName("precio-artículo")[0].children[0];
     price = parseInt(price.innerText.slice(0, price.innerText.length - 1), 10);
-    var qty = itemNode.getElementsByClassName("Unidad")[0].value;
+    var qty = article.getElementsByClassName("unidades-artículo")[0].children[0].value;
     return price * qty;
-
 
 }
 
+/*
 function updatePriceByProduct(productPrice, index) {
     var products = document.getElementsByClassName("producto");
     products[index].getElementsByClassName("product-total") [0].innerText = `${productPrice}€`;
 
-
 }
+*/
 
 
 function getTotalPrice() {
-    var products = document.getElementsByClassName("producto");
+    var articles = document.getElementsByClassName("articulo");
     var total = 0;
-    for (let i = 0; i < products.length; i++) {
-        let price = getPriceByProduct(products[i]);
-        updatePriceByProduct(price, i);
+    for (let i = 0; i < articles.length; i++) {
+        let price = getPriceByArticle(articles[i]);
+        //updatePriceByProduct(price, i);
         total += price;
     }
     document.getElementById("total").innerText = `${total}€`;
