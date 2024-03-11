@@ -27,7 +27,7 @@
   
   /* Style the topnav links */
   .topnav a {
-    float: center;
+    float: left;
     display: block;
     color: #FFEB3B;
     text-align: center;
@@ -41,30 +41,23 @@
     color: #8BC34A;
   }
   
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 75%;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-  }
-  
+
   .padel {
     height:400px
   }
+
+  
   
   /* Add a card effect for articles */
   .card {
     background-color: #DCEDC8;
     padding: 20px;
     margin-top: 20px;
+    margin-left: 500px;
+  }
+
+  p {
+    margin-left: -500px;
   }
   
   /* Clear floats after the columns */
@@ -80,6 +73,19 @@
     text-align: center;
     background: #212121;
     margin-top: 20px;
+    color: #FFEB3B;
+  }
+
+  .RRSS {
+    padding: 20px;
+    text-align: center;
+    background: #212121;
+    margin-top: 20px;
+    color: #FFEB3B;
+  }
+
+  .fb, .ig {
+    height: 50px
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
