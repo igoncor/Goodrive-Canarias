@@ -15,7 +15,7 @@
     padding: 10px;
     color: white;
     text-align: center;
-    background-image: url('/assets/young-people-playing-padel-tennis-royalty-free-image-1680623375.jpg'); /* Ruta de la imagen actual */
+    background-image: url('../assets/young-people-playing-padel-tennis-royalty-free-image-1680623375.jpg'); /* Ruta de la imagen actual */
     background-size: cover;
     background-position: bottom;
   }
@@ -94,7 +94,7 @@
       padding: 0;
     }
   }
-}
+
 
 
 
