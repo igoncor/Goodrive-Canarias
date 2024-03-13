@@ -3,16 +3,17 @@ function deleteItem(e) {
     var product = e.currentTarget.parentNode.parentNode;
 
     // Resetear el valor del input de cantidad a 0
-    var qtyInput = product.getElementsByClassName("Unidad")[0];
+    var qtyInput = product.getElementsByClassName("unidad")[0];
     qtyInput.value = 0;
 
     // Resetear el texto del precio total del producto a 0€
-    var totalPriceElement = product.getElementsByClassName("product-total")[0];
-    totalPriceElement.innerText = "0€";
+   // var totalPriceElement = product.getElementsByClassName("product-total")[0];
+    //totalPriceElement.innerText = "0€";
 
     // Opcionalmente, puedes llamar a getTotalPrice para actualizar el precio total si es necesario
     // a medida que borramos se puede ver el valor restante
     getTotalPrice();
+    getHayUnidad();
 
 }
 
@@ -72,8 +73,16 @@ window.onload = function () {
 
     var deleteButtons = document.getElementsByClassName("btn-delete");
 
-    calculaPricioButton.onclick = getTotalPrice;
+//==
+function handleClik(){
+    getTotalPrice();
+    getHayUnidad();
+}
 
+//==
+
+
+    calculaPricioButton.onclick = handleClik;
 
     for (var i = 0; i < deleteButtons.length; i++) {
         deleteButtons[i].onclick = deleteItem;
@@ -81,41 +90,44 @@ window.onload = function () {
 }
 
 
-/* PROYECTO TIENDA e-COMMERCE */
-    // function getHayUnidad() {
-    //     var articlesNumbers = document.getElementsByClassName("articulo");
-    //     var lista = document.createElement("ul"); // Crear un elemento <ul> para contener los elementos de la lista
-    //     articlesNumbers.forEach(function (articulo) {
-    //         let cantidad = articulo.getElementsByClassName("unidades-artículo")[0].getElementsByTagName("input")[0].value;
-    //         cantidad = parseInt(cantidad, 10);
-    //         if (cantidad >= 1) {
-    //             let nombreArticulo = articulo.getElementsByClassName("nombre-artículo")[0].innerText;
-    //             let listItem = document.createElement("li"); // Crear un elemento <li> para cada artículo
-    //             listItem.textContent = nombreArticulo; // Establecer el texto del elemento <li> como el nombre del artículo
-    //             lista.appendChild(listItem); // Agregar el elemento <li> a la lista
-    //         }
-    //     });
-    //     document.getElementById("art").appendChild(lista); // Agregar la lista al elemento con el ID "art"
-    // }
+//===================
 
-    function getHayUnidad() {
-        var articlesNumbers = document.getElementsByClassName("articulo");
-        var lista = document.createElement("ul");
-        articlesNumbers.forEach(function (articulo) {
-            let cantidad = articulo.getElementsByClassName("unidades-artículo")[0].getElementsByTagName("input")[0].value;
-            cantidad = parseInt(cantidad, 10);
-            if (cantidad >= 1) {
-                let nombreArticulo = articulo.getElementsByClassName("nombre-artículo")[0].innerText;
-                let listItem = document.createElement("li");
-                listItem.textContent = nombreArticulo;
-                lista.appendChild(listItem);
-            }
-        });
-        document.getElementById("art").appendChild(lista);
-        console.log(art);
+
+function getHayUnidad() {
+    let articlesNumbers = document.getElementsByClassName("articulo");
+    let contenedorLista = document.getElementById("art");
+    contenedorLista.innerHTML = '';// Limpia el contenedor para la nueva lista de artículos
+   /* let nombresArticulos = "";*/
+    for (let i = 0; i < articlesNumbers.length; i++) {
+        let cantidad = articlesNumbers[i].getElementsByClassName("unidades-artículo")[0].getElementsByTagName("input")[0].value;
+        cantidad = parseInt(cantidad, 10);
+        if (cantidad >= 1) {
+            let nombreArticulo = articlesNumbers[i].getElementsByClassName("nombre-artículo")[0].innerText;
+           /* nombresArticulos += nombreArticulo + "\n";*/
+           let elementoLista = document.createElement("li"); // Crea un nuevo elemento <li>
+            elementoLista.textContent = nombreArticulo; // Establece el nombre del artículo como el contenido del <li>
+            contenedorLista.appendChild(elementoLista); 
+        }
+        
+       /* document.getElementById("art").innerText = nombresArticulos;*/
     }
-
-
-
-
     
+}
+
+/*
+function getHayUnidad() {
+    var articlesNumbers = document.getElementsByClassName("articulo");
+    var lista = document.createElement("ul"); 
+    articlesNumbers.forEach(function (articulo) {
+        let cantidad = articulo.getElementsByClassName("unidades-artículo")[0].getElementsByTagName("input")[0].value;
+        cantidad = parseInt(cantidad, 10);
+        if (cantidad >= 1) {
+            let nombreArticulo = articulo.getElementsByClassName("nombre-artículo")[0].innerText;
+            let listItem = document.createElement("li"); 
+            listItem.textContent = nombreArticulo; 
+            lista.appendChild(listItem); 
+        }
+    });
+    document.getElementById("art").appendChild(lista); 
+}
+*/
