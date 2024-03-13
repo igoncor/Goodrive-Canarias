@@ -35,14 +35,14 @@
     color: #212121;
     border-radius: 5px;
 }
-.producto {
+/*.producto {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
     font-size: small;
 
-    .nombre-artículo{
+.nombre-artículo{
         width: 25%;
         max-width: 150px;
         background-color: #FFF9C4;
@@ -52,29 +52,27 @@
         border-radius: 5px;
         
     }
-    .precio-artículo{
+.precio-artículo{
         width: 10%;
         max-width: 100px;
         text-align: justify;
         vertical-align: middle;
     }
-    .unidades-artículo{
+ .unidades-artículo{
         width: 15%;
         max-width: 150px;
         text-align: justify;
         vertical-align: middle;
     }
-    .Art-5{
+.Art-5{
         width: 5%;
         max-width: 30px;
     }
-    
-
 
 } 
-
+*/
 #calc-precio{
-    width: 250px;
+    width: 190px;
 }
 
 .background-container{
@@ -86,23 +84,83 @@
     background-color: #BDBDBD; 
 }
 .div-container{
-    background-color: rgb(178, 237, 178);
+    background-color: #BDBDBD;
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: 80%;
     padding: 1rem;
     width: 60%;
 }
+.articulos-tabla{
+    justify-content: center;
+    align-items: center;
+}
+
 
 .div-cart{
-    background-color: #FBC02D;
+    background-color: #FFF9C4;
     display: flex;
     flex-direction: row;
     height: auto;
     padding: 1rem;
     width: 40%;
+    justify-content: center;
+    align-items: center;
+    
 }
+.tablacart{
+    background-color: #c4ffcf;
+    height: 300px;
+    width: 450px;
+    border: 2px solid #212121;    /* Borde que coincide con el fondo para un look limpio */
+    border-radius: 10px; 
+}
+#bodycart{
+    align-items: center;
+}  
+
+ul{
+    list-style: none;
+    text-align: left;
+ } 
+ #bodycart2{
+    text-align:center;
+    background-color: #f2f2f2; /* Color de fondo del cuadrado */
+    border: 2px solid #000; /* Borde del cuadrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de elevación */
+    margin: 20px; /* Margen alrededor del cuadrado para evitar que toque otros elementos */
+    border-radius: 10px;
+ }
 
 
+.headershop {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+.headershop h1 {
+    font-size: 50px;
+  }
 
+.topnavshop {
+    overflow: hidden;
+    background-color: #212121;
+  }
+  
+  /* Style the topnav links */
+.topnavshop a {
+    float: left;
+    display: block;
+    color: #FFF9C4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+.topnavshop a:hover {
+    background-color: #FFF9C4;
+    color: #212121;
+  }
 
