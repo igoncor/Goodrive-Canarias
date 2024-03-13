@@ -1,79 +1,59 @@
-.btn {
-    display: flex;  /*El boton se comporta como un bloque permite que el botón se sitúe al lado de otros elementos sin forzar un salto de línea */
-    padding: 5px 20px;      /* Ajustado para un mejor espaciado (en este caso modificamos el color del background*/
-    margin-bottom: 0;       /*Elimina el margen inferior del botón. Esto puede ser útil para controlar con precisión la separación entre botones o entre un botón y otros elementos adyacentes*/
-    font-size: 20px;        /* Establece el tamaño de la fuente del texto dentro del botón para mejor legibilidad */
-    font-weight: 500;       /* Aumentado para darle más presencia */
-    line-height: 1.5;       /* Ajustado para una mejor proporción */
+
+.headershop {
     text-align: center;
-    white-space: nowrap;    /*Evita que el texto dentro del botón se divida en varias líneas*/
-    vertical-align: middle; /*Alinea el botón verticalmente en el medio en relación con los elementos adyacentes*/
-    cursor: pointer;        /*ambia el cursor a una mano o puntero cuando se pasa el mouse sobre el botón, indicando que el elemento es clickeable.*/
-    user-select: none;      /* Impide que el usuario seleccione el texto dentro del botón. Esto mejora la usabilidad, evitando la selección accidental del texto al hacer clic en el botón repetidamente */
-    background-color: #00BCD4;  /* Un azul por defecto, siente libre de cambiarlo */
-    color: #212121;             /* Texto neutro para contraste */
-    border: 2px solid #212121;    /* Borde que coincide con el fondo para un look limpio */
-    border-radius: 10px;          /* Radio de borde para bordes suavizados */
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;    /* Transición suave para interacciones */
-    margin: auto auto;
+    position: relative;
+    z-index: 1;
 }
 
-.btn:hover {                       /* actuacion del boton cuando pasa el mouse*/
-    background-color: #00BCD4;  /* Oscurecer el botón ligeramente al pasar el mouse o enfocar */
-    border-color: #212121;
-    color: #f2f2f2;             /* Mantener el texto blanco para contraste */
-    outline: 0;                   /* Eliminar el contorno predeterminado en foco */
+.headershop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../assets/IMG_20190817_185221.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Opacidad del fondo */
+    z-index: -1;
+}
+.headershop h2 {
+    /* Quitar márgenes por defecto del h2 */
+    margin: 0;
+    padding: 20px 0;
 }
 
-/*.btn:active {                      /* actuacion del boton cuando clikeas*/
-/*    background-color: #FFEB3B;  /* Más oscuro aún cuando se hace clic */
-/*    border-color: #FFEB3B;
-}*/
+.logo1 {
+    height: 300px;
+    /* Aseguramos que logo1 no tenga opacidad aplicada para mantenerlo completamente opaco */
+}
 
-.btn-delete{
-    background-color: #FBC02D;
+
+.top{
+    overflow: hidden;
+    background-color: #212121;
+  }
+  
+  /* Style*/
+.top a {
+    float: left;
+    display: block;
+    color: #FFF9C4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Cambio de color*/
+.top a:hover {
+    background-color: #FFF9C4;
     color: #212121;
-    border-radius: 5px;
-}
-/*.producto {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    font-size: small;
+  }
 
-.nombre-artículo{
-        width: 25%;
-        max-width: 150px;
-        background-color: #FFF9C4;
-        padding: 0.2rem;
-        border: 2px solid #212121;
-        text-align: center;
-        border-radius: 5px;
-        
-    }
-.precio-artículo{
-        width: 10%;
-        max-width: 100px;
-        text-align: justify;
-        vertical-align: middle;
-    }
- .unidades-artículo{
-        width: 15%;
-        max-width: 150px;
-        text-align: justify;
-        vertical-align: middle;
-    }
-.Art-5{
-        width: 5%;
-        max-width: 30px;
-    }
 
-} 
-*/
-#calc-precio{
-    width: 190px;
-}
+
 
 .background-container{
     display: flex;
@@ -81,19 +61,40 @@
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;  
-    background-color: #BDBDBD; 
+    background-color: #FFF9C4; 
 }
+
+
+
+
 .div-container{
-    background-color: #BDBDBD;
+    background-color: #DCEDC8; 
     display: flex;
     flex-direction: row;
     height: 80%;
     padding: 1rem;
-    width: 60%;
+    width: 50%;
+    border:2px solid gray;
+    box-shadow: 0px 0px 10px 0px gray(0,0,0,0.5);
+    border-radius: 10px;
+    margin-top: 50px; 
 }
 .articulos-tabla{
     justify-content: center;
     align-items: center;
+}
+
+.articulos-tabla th, .articulos-tabla td {
+    text-align: left; /* Centra el contenido de las celdas */
+    vertical-align: middle; /* Alinea el contenido de las celdas verticalmente en el centro */
+}
+
+.articulos-tabla th h3 {
+    text-align: center;
+    margin: 0; /* Elimina los márgenes predeterminados para asegurar la alineación */
+}
+.precio-artículo, .unidades-artículo {
+    padding: 0 30px; /* Añade un poco de espacio alrededor del contenido de estas celdas */
 }
 
 
@@ -103,17 +104,18 @@
     flex-direction: row;
     height: auto;
     padding: 1rem;
-    width: 40%;
+    width: 50%;
     justify-content: center;
     align-items: center;
     
 }
 .tablacart{
-    background-color: #c4ffcf;
+    background-color: #8BC34A;
     height: 300px;
     width: 450px;
     border: 2px solid #212121;    /* Borde que coincide con el fondo para un look limpio */
     border-radius: 10px; 
+    
 }
 #bodycart{
     align-items: center;
@@ -130,37 +132,44 @@ ul{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de elevación */
     margin: 20px; /* Margen alrededor del cuadrado para evitar que toque otros elementos */
     border-radius: 10px;
+   
  }
 
 
-.headershop {
-    padding: 30px;
-    text-align: center;
-    background: white;
-  }
-  
-.headershop h1 {
-    font-size: 50px;
-  }
 
-.topnavshop {
-    overflow: hidden;
-    background-color: #212121;
-  }
-  
-  /* Style the topnav links */
-.topnavshop a {
-    float: left;
-    display: block;
-    color: #FFF9C4;
+
+ .btn {
+    display: flex;          /*El boton se comporta como un bloque permite que el botón se sitúe al lado de otros elementos sin forzar un salto de línea */
+    padding: 5px 20px;      /* Ajustado para un mejor espaciado (en este caso modificamos el color del background*/
+    margin-bottom: 0;       /*Elimina el margen inferior del botón. Esto puede ser útil para controlar con precisión la separación entre botones o entre un botón y otros elementos adyacentes*/
+    font-size: 20px;        /* Establece el tamaño de la fuente del texto dentro del botón para mejor legibilidad */
+    font-weight: 500;       /* Aumentado para darle más presencia */
+    line-height: 1.5;       /* Ajustado para una mejor proporción */
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-.topnavshop a:hover {
-    background-color: #FFF9C4;
+    white-space: nowrap;    /*Evita que el texto dentro del botón se divida en varias líneas*/
+    vertical-align: middle; /*Alinea el botón verticalmente en el medio en relación con los elementos adyacentes*/
+    cursor: pointer;        /*ambia el cursor a una mano o puntero cuando se pasa el mouse sobre el botón, indicando que el elemento es clickeable.*/
+    user-select: none;      /* Impide que el usuario seleccione el texto dentro del botón. Esto mejora la usabilidad, evitando la selección accidental del texto al hacer clic en el botón repetidamente */
+    background-color: #7ca4e4;  /* Un azul por defecto, siente libre de cambiarlo */
+    color: #212121;             /* Texto neutro para contraste */
+    border: 2px solid #212121;    /* Borde que coincide con el fondo para un look limpio */
+    border-radius: 10px;          /* Radio de borde para bordes suavizados */
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;    /* Transición suave para interacciones */
+    margin: auto auto;
+}
+
+.btn:hover {                       /* actuacion del boton cuando pasa el mouse*/
+    background-color: #7ca4e4;  /* Oscurecer el botón ligeramente al pasar el mouse o enfocar */
+    border-color: #212121;
+    color: #f2f2f2;             /* Mantener el texto blanco para contraste */
+    outline: 0;                   /* Eliminar el contorno predeterminado en foco */
+}
+
+
+.btn-delete{
+    background-color: #FFEB3B;
+    ;
     color: #212121;
-  }
+    border-radius: 5px;
+}
 
