@@ -1,18 +1,23 @@
+
 * {
     box-sizing: border-box;
   }
   
   body {
-    font-family: Arial;
+    font-family: Arial, 'Times New Roman', Times, serif;
     padding: 10px;
-    background: #DCEDC8;
+    background: #7ca4e4;
   }
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: white;
     text-align: center;
-    background: #DCEDC8;
+    background-image: url('/assets/young-people-playing-padel-tennis-royalty-free-image-1680623375.jpg'); /* Ruta de la imagen actual */
+    background-size: cover;
+    background-position: bottom;
   }
   
   .logo {
@@ -50,7 +55,7 @@
   
   /* Add a card effect for articles */
   .card {
-    background-color: #DCEDC8;
+    background-color: #7ca4e4;
     padding: 20px;
     margin-top: 20px;
     margin-left: 500px;
@@ -69,23 +74,17 @@
   
   /* Footer */
   .footer {
-    padding: 20px;
+    padding: 3px;
     text-align: center;
     background: #212121;
     margin-top: 20px;
     color: #FFEB3B;
   }
 
-  .RRSS {
-    padding: 20px;
-    text-align: center;
-    background: #212121;
-    margin-top: 20px;
-    color: #FFEB3B;
-  }
+
 
   .fb, .ig {
-    height: 50px
+    height: 40px
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
