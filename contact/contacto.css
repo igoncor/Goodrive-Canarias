@@ -13,7 +13,7 @@
 
 body {
     font-family: Arial, 'Times New Roman', Times, serif;
-    padding: 10px;
+    /* padding: 10px; */
     background: #DCEDC8;
 }
 
@@ -197,6 +197,7 @@ h1 {
     text-align: center;
     position: relative;
     z-index: 1;
+    padding: 5px;
 }
 
 .header::before {
@@ -210,8 +211,7 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.5;
-    /* Opacidad del fondo */
+    opacity: 0.5;    
     z-index: -1;
 }
 
