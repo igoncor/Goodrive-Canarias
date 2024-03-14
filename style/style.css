@@ -94,9 +94,12 @@
       padding: 0;
     }
   }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> ca17e4d1b23cd99f823233c80a34d7b59d9dd624
 
 h1 {
   display: block;
@@ -112,8 +115,3 @@ h1 {
   font-size: 50px;
 }
 
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
