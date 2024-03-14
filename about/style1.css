@@ -18,9 +18,9 @@
 .about-us-container{
   z-index: 50;
   display: flex;
-  margin-top: 60px;
   background-color: #fff9c4;
- 
+  width: 100vw;
+  height: 100vh;
 }
 .about-us-text{
   z-index: 50;
@@ -51,17 +51,6 @@
 
 
 }
-
-.header1{
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header1 h1 {
-  font-size: 50px;
-}
-
 .topnav1 {
   overflow: hidden;
   background-color: #212121;
@@ -71,7 +60,7 @@
 .topnav1 a {
   float: left;
   display: block;
-  color: #FFF9C4;
+  color: #FFEB3B;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -81,4 +70,31 @@
 .topnav1 a:hover {
   background-color: #FFF9C4;
   color: #212121;
+}
+.header1 {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.header1 h2 {
+    /* Quitar márgenes por defecto del h2 */
+    margin: 0;
+    padding: 20px 0;
+}
+.header1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../assets/IMG_20190817_185221.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Opacidad del fondo */
+    z-index: -1;
+}
+.logo{
+  height: 300px;
 }
